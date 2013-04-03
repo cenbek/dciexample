@@ -1,0 +1,19 @@
+require_relative "../../app/roles/headteacher"
+
+class HeadTeacherDefineAcademicYearContext
+  attr_reader :person, :academicyear
+  
+  def self.call(person, academic_year_parameter)
+    HeadTeacherDefineAcademicYearContext.new(person, academic_year_parameter).call
+  end
+  
+  def initialize(person, academicyear)
+    @person, @academicyear = person, academicyear
+    @person.extend HeadTeacher
+  end
+  
+  def call
+   @person.define_academic_year @academicyear
+  end
+end
+
