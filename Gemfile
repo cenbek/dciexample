@@ -1,3 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'minitest'
+
+group :development, :test do
+  gem 'minitest'
+  gem 'spinach'
+end
