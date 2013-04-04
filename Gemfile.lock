@@ -1,16 +1,10 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    colorize (0.5.8)
-    gherkin-ruby (0.2.1)
     minitest (4.7.0)
-    spinach (0.8.0)
-      colorize (= 0.5.8)
-      gherkin-ruby (~> 0.2.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   minitest
-  spinach
