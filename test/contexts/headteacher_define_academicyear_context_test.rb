@@ -11,7 +11,8 @@ class HeadTeacherDefineAcademicYearContextTest < MiniTest::Unit::TestCase
     person.first_name="John"
     person.last_name="Nash"
  
-    HeadTeacherDefineAcademicYearContext.call(person, academicyear)
+    HeadTeacherDefineAcademicYearContext.new(person, academicyear).call
+    
     
     
   end
